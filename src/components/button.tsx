@@ -1,8 +1,14 @@
 import { Button as ButtonPrimitive, IButtonProps } from 'native-base'
 
-interface ButtonProps extends IButtonProps {}
+interface ButtonProps extends IButtonProps {
+  variant?: 'primary' | 'outline'
+}
 
-export function Button({ children, variant, ...rest }: ButtonProps) {
+export function Button({ 
+  children, 
+  variant = 'primary', 
+  ...rest 
+}: ButtonProps) {
   return (
     <ButtonPrimitive 
       w="full"
