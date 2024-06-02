@@ -7,7 +7,7 @@ export function Home() {
     <VStack flex={1}>
       <HomeHeader />
 
-      <Group name="costas" />
+      <Group name="Costas" />
     </VStack>
   )
 }
