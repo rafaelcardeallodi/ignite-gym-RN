@@ -34,5 +34,12 @@ export const theme = extendTheme({
   sizes: {
     14: 56,
     33: 148
+  },
+  components: {
+    Heading: {
+      baseStyle: () => ({
+        fontFamily: 'heading',
+      })
+    }
   }
 })

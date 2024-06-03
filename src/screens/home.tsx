@@ -1,7 +1,9 @@
-import { Group } from "@components/group";
-import { HomeHeader } from "@components/home-header";
 import { FlatList, HStack, Heading, Text, VStack } from "native-base";
 import { useState } from "react";
+
+import { ExerciseCard } from "@components/exercise-card";
+import { Group } from "@components/group";
+import { HomeHeader } from "@components/home-header";
 
 export function Home() {
   const [groups, setGroups] = useState(['costa', 'peito', 'ombro', 'perna'])
@@ -36,6 +38,9 @@ export function Home() {
 
           <Text color="gray.200" fontSize="sm">4</Text>
         </HStack>
+
+        <ExerciseCard />
+        <ExerciseCard />
       </VStack>
     </VStack>
   )
